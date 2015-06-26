@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <script>
+			function move(y) {
+  				var dy = window.scrollY > 0 ? window.scrollY : 1;
+  				var delta = 0.1;
+
+  				function frame() {
+					function quad(p) {
+						return(Math.pow(p, 2));
+					}
+					window.scroll(0, dy);
+    				if (dy >= y) {
+      					clearInterval(id);
+      				}
+      				quad(dy);
+  				}
+				var id = setInterval(frame, 10);
+			}
+
+			function parallax() {
+					var cssRules = document.styleSheets[0].cssRules;
+	            	var rules = {};
+
+	            	for (var i = 0; i < cssRules.length; i++) {
+	            		rules[cssRules[i].selectorText] = cssRules[i].style;
+	            	}
+
+	            	var space1 = rules["#space1"];
+					var space2 = rules["#space2"];
+
+	            	var body_speed = 8.0;
+	            	var space1_speed = 2.0;
+	            	var space2_speed = 2.0;
+
+	            window.onscroll = function() {
+	                document.body.style.backgroundPosition = (-window.pageXOffset / body_speed) + "px " + (-window.pageYOffset / body_speed) + "px";
+	                space1.backgroundPosition = (-window.pageXOffset / space1_speed) + "px " + (-window.pageYOffset / space1_speed) + "px";
+	                space2.backgroundPosition = (-window.pageXOffset / space2_speed) + "px " + (-window.pageYOffset / space2_speed) + "px";
+	            }
+	        }
+	    </script>
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			body {
+				background-image: url("p2.png");
+				background-repeat:repeat-xy;
+				background-attachment: fixed;
+				height: 2000px;
+				width: 100%;
+			}
+			#space1 {
+				height: 680px;
+				width: 100%;
+				background: #FFAAFF;
+				background-image: url("header_bg.png");
+				background-repeat:repeat-xy;
+				background-attachment: fixed;
+			}
+			.blank {
+				height: 200px;
+			}
+			#space2 {
+				height: 800px;
+				width: 100%;
+				background: #FFAAFF;
+				background-image: url("climate-cold-glacier-iceberg.jpg");
+				background-repeat:repeat-xy;
+				background-attachment: fixed; 
+			}
+			h1 {
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body onload="parallax()">
+		<div id="space1"></div>
+		<div class="blank"><h1>This is some text</h1></div>
+		<div id="space2"></div>
+	</body>
+</html>

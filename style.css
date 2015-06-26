@@ -1,0 +1,176 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#logo {
+	margin: 0;
+	float: left;
+	padding: 0 2.09em;
+	padding-top: 0.3em;
+	padding-left: 2em;
+}
+
+.nav {
+	background: #0E6180;
+	width: 100%;
+	position: fixed;
+}
+
+.nav-clear {
+	background: #0E6180;
+	padding: 0 2.099em;
+}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+	background: #0E6180;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav li {
+	float: left;
+	margin-right: 0.6em;
+	margin-left: 0.6em;
+}
+
+.nav a {
+	display: block;
+	padding: 0 2.097em;
+	line-height: 3em;
+	background: #073444 repeat-y left top;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.nav a:hover,
+.nav a:focus {
+	color: #333333;
+	background: #AAAAAA;
+}
+
+.header {
+	padding: 0;
+	margin: 0;
+	background: #CCCCCC;
+	padding-top: 2.097em;
+	padding-left: 2em;
+	height: 504px;
+	background-image: url(header_bg.png);
+	background-size: 100% auto;
+}
+
+.content {
+	padding: 0;
+	margin: 0;
+
+}
+
+.content .banner {
+	padding: 30px;
+	margin: 0;
+	background: #000000;
+	overflow: hidden;
+}
+
+.content .banner h1 {
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 32px;
+	letter-spacing: -1px;
+}
+
+.content .container {
+	padding: 30px;
+	padding-left: 2.5em;
+	float: left;
+	color: #2B3D4F;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-image: url(pattern.jpg);
+	background-repeat: repeat;
+}
+
+.content .container h1 {
+	color: #2B3D4F;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.content .container .card {
+	display: inline-block;
+	background: #FFFFFF;
+	padding: 30px;
+	margin: 20px;
+	box-shadow: 0 0 5px #888888;
+}
+
+.content .container .contact-form {
+	display: inline-block;
+	clear: both;
+}
+
+.contact-form input {
+	text-size: 12px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contact-form textarea {
+	width: 100%; 
+	height: 240px;
+	vertical-align: top;
+	font-size: 12px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+fieldset {
+	padding: 1em;
+	border: 1px solid #CCCCCC;
+	background: #F8F8F8;
+	width: 700px;
+}
+
+legend {
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	cursor: pointer;
+	text-align: left;
+}
+
+input {
+	width: 20em;
+	float: left;
+}
+
+.footer {
+	float: left;
+	margin: 0;
+	height: 240px;
+	width: 100%;
+	background: #0E6180;
+	color: #FFFFFF;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer .primary {
+	margin: 10px;
+	margin-top: 120px;
+	float: left;
+}
+
+.footer .secondary {
+	margin: 10px;
+	margin-top: 120px;
+	float: left;
+}
